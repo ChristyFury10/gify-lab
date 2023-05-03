@@ -12,7 +12,8 @@ const GifSearch = (props) =>{
 
     const handleSubmit =(event)=>{
         event.preventDefault();
-        props.gifSearch(formData.GifSearch)
+        props.gifSearch(formData.searchTerm)
+        // console.log(props.gifSearch)
     }
    return(
     <form onSubmit={handleSubmit}>

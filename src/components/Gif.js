@@ -2,7 +2,10 @@ const Gif = ({gif})=>{
     return(
         <div>
             Gif here
-            {gif.title}
+     {/* {gif.map(gif=>(
+        <div>x</div>
+     ))} */}
+
         </div>
     )
 }

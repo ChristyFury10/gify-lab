@@ -12,16 +12,24 @@ function App() {
     const response = await fetch(
       `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${gifSearch}&limit=25&offset=0&rating=g&lang=en`
     )
-    const data = await response.json()
-    setGif(data)
-  }
+    const data = await response.json();
 
-  useEffect(()=>{
-    getGif("default");
-  }, [])
+
+    setGif(data.data)
+
+    
+    // console.log("gif", gif)
+  }
+console.log("gif", gif)
+  // useEffect(()=>{
+  //   getGif("default");
+  // }, [])
 
   return (
     <div className="App">
+
+     
+
     Giphs
     <GifSearch gifSearch={getGif}/>
     <GifCard gif={gif}/>
