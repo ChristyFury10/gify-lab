@@ -1,11 +1,7 @@
 const Gif = ({gif})=>{
     return(
         <div>
-            Gif here
-     {/* {gif.map(gif=>(
-        <div>x</div>
-     ))} */}
-
+        <img src={gif} />
         </div>
     )
 }

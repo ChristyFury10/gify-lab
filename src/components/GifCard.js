@@ -8,14 +8,10 @@ const GifCard = ({gif})=>{
     return(
         <div>
             {/* {gif.title} */}
-            
-            display searched gif
-            <Gif/>
-            <GifTitle/>
-            
+            <GifTitle />
+            <Gif gif ={gif}/>
         </div>
     )}
-// console.log(gif)
 
     const loading=()=>{
         return <h2>Search for a Gif</h2>

@@ -1,7 +1,7 @@
-const GifTitle = ()=>{
+const GifTitle = ({gif})=>{
     return(
         <div>
-            Title here
+            Here is a GIF for you!
         </div>
     )
 }

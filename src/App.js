@@ -13,9 +13,9 @@ function App() {
       `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${gifSearch}&limit=25&offset=0&rating=g&lang=en`
     )
     const data = await response.json();
+    const displayData = (data.data[0].images.downsized_large.url)
 
-
-    setGif(data.data)
+    setGif(displayData)
 
     
     // console.log("gif", gif)
@@ -27,10 +27,7 @@ console.log("gif", gif)
 
   return (
     <div className="App">
-
-     
-
-    Giphs
+      What are you looking for?
     <GifSearch gifSearch={getGif}/>
     <GifCard gif={gif}/>
     </div>
